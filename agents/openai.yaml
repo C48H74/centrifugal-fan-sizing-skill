@@ -1,0 +1,4 @@
+interface:
+  display_name: "Centrifugal Exhaust Fan Sizing"
+  short_description: "Calculate fan pressure, power and curve selection"
+  default_prompt: "Use $dimensionar-exaustor-centrifugo to prepare traceable preliminary fan sizing and identify the data required for final selection; respond in English, Portuguese or Spanish as requested."
