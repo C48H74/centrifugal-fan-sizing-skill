@@ -1,0 +1,40 @@
+{
+  "case_id": "CF-CASE-002-ILLUSTRATIVE",
+  "evidence": "illustrative",
+  "flow_m3h": 12000,
+  "density_kgm3": 1.20,
+  "viscosity_Pas": 0.0000181,
+  "pressure_basis": "total",
+  "constant_pressure_Pa": 0,
+  "segments": [
+    {"id": "D-01", "length_m": 20, "diameter_m": 0.65, "roughness_m": 0.00015, "K_sum": 2.0, "source": "Illustrative geometry, roughness and fitting K; not a surveyed installation or licensed fitting data"},
+    {"id": "D-02", "length_m": 10, "diameter_m": 0.60, "roughness_m": 0.00015, "K_sum": 1.5, "source": "Illustrative geometry, roughness and fitting K; verify actual fittings and K reference section"}
+  ],
+  "components": [
+    {"id": "HOOD", "reference_loss_Pa": 150, "reference_flow_m3s": 3.3333333333333335, "reference_density_kgm3": 1.2, "source": "Illustrative assumed hood entry loss; capture performance not demonstrated"},
+    {"id": "FILTER-DIRTY", "reference_loss_Pa": 850, "reference_flow_m3s": 3.3333333333333335, "reference_density_kgm3": 1.2, "source": "Illustrative dirty-filter duty; quadratic law assumed, obtain supplier clean/dirty curves"},
+    {"id": "SILENCER", "reference_loss_Pa": 120, "reference_flow_m3s": 3.3333333333333335, "reference_density_kgm3": 1.2, "source": "Illustrative loss only; no acoustic guarantee"},
+    {"id": "DISCHARGE", "reference_loss_Pa": 83.3919206842278, "reference_flow_m3s": 3.3333333333333335, "reference_density_kgm3": 1.2, "source": "Illustrative free-discharge velocity pressure for 0.60 m duct; no recovery; included once in total-pressure balance"}
+  ],
+  "fan_efficiency": 0.72,
+  "efficiency_basis": "total",
+  "drive_efficiency": 0.97,
+  "motor_efficiency": 0.92,
+  "vfd_efficiency": 0.97,
+  "motor_margin_fraction": 0.10,
+  "fan_curve": {
+    "source": "SYNTHETIC TRAINING CURVE; not a manufacturer product or performance guarantee",
+    "evidence": "illustrative",
+    "basis": "total",
+    "reference_density_kgm3": 1.2,
+    "reference_speed_rpm": 1500,
+    "operating_speed_rpm": 1500,
+    "points": [
+      {"flow_m3s": 1.0, "pressure_Pa": 2400, "shaft_power_kW": 5.0},
+      {"flow_m3s": 2.0, "pressure_Pa": 2200, "shaft_power_kW": 7.0},
+      {"flow_m3s": 3.0, "pressure_Pa": 1900, "shaft_power_kW": 8.5},
+      {"flow_m3s": 4.0, "pressure_Pa": 1350, "shaft_power_kW": 9.5},
+      {"flow_m3s": 5.0, "pressure_Pa": 650, "shaft_power_kW": 10.0}
+    ]
+  }
+}

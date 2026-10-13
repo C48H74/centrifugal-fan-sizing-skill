@@ -1,0 +1,130 @@
+{
+  "version": "2.0.0",
+  "case_id": "CF-CASE-002-ILLUSTRATIVE",
+  "evidence": "illustrative",
+  "release_status": "PRELIMINARY — NOT FOR PURCHASE OR CONSTRUCTION",
+  "basis": "total",
+  "flow_m3s": 3.3333333333333335,
+  "density_kgm3": 1.2,
+  "segments": [
+    {
+      "id": "D-01",
+      "source": "Illustrative geometry, roughness and fitting K; not a surveyed installation or licensed fitting data",
+      "area_m2": 0.3318307240354219,
+      "velocity_ms": 10.045282404222192,
+      "reynolds": 432890.6229443817,
+      "darcy_factor": 0.01590075857572674,
+      "method": "Colebrook, Darcy",
+      "velocity_pressure_Pa": 60.54461914834558,
+      "straight_loss_Pa": 29.621703758066634,
+      "fitting_loss_Pa": 121.08923829669116,
+      "total_loss_Pa": 150.7109420547578
+    },
+    {
+      "id": "D-02",
+      "source": "Illustrative geometry, roughness and fitting K; verify actual fittings and K reference section",
+      "area_m2": 0.2827433388230814,
+      "velocity_ms": 11.789255043844099,
+      "reynolds": 468964.8415230802,
+      "darcy_factor": 0.0159517048081976,
+      "method": "Colebrook, Darcy",
+      "velocity_pressure_Pa": 83.3919206932821,
+      "straight_loss_Pa": 22.170721704797685,
+      "fitting_loss_Pa": 125.08788103992316,
+      "total_loss_Pa": 147.25860274472086
+    }
+  ],
+  "components": [
+    {
+      "id": "HOOD",
+      "source": "Illustrative assumed hood entry loss; capture performance not demonstrated",
+      "loss_Pa": 150.0,
+      "law": "assumed quadratic at fixed condition; verify equipment curve"
+    },
+    {
+      "id": "FILTER-DIRTY",
+      "source": "Illustrative dirty-filter duty; quadratic law assumed, obtain supplier clean/dirty curves",
+      "loss_Pa": 850.0,
+      "law": "assumed quadratic at fixed condition; verify equipment curve"
+    },
+    {
+      "id": "SILENCER",
+      "source": "Illustrative loss only; no acoustic guarantee",
+      "loss_Pa": 120.0,
+      "law": "assumed quadratic at fixed condition; verify equipment curve"
+    },
+    {
+      "id": "DISCHARGE",
+      "source": "Illustrative free-discharge velocity pressure for 0.60 m duct; no recovery; included once in total-pressure balance",
+      "loss_Pa": 83.3919206842278,
+      "law": "assumed quadratic at fixed condition; verify equipment curve"
+    }
+  ],
+  "system_curve": {
+    "constant_Pa": 0.0,
+    "quadratic_Pa_per_m3s_squared": 135.12253189353356,
+    "assumption": "Darcy factors frozen at design flow; all variable equipment losses quadratic"
+  },
+  "design": {
+    "pressure_Pa": 1501.3614654837065,
+    "pressure_mmH2O": 153.0962627894038,
+    "air_power_kW": 5.004538218279022,
+    "shaft_power_kW": 6.950747525387531,
+    "motor_mechanical_at_duty_kW": 7.165719098337661,
+    "electrical_at_duty_kW": 8.029716605039962
+  },
+  "limitations": [
+    "Single circular-duct series path only; no parallel branches",
+    "Steady low-pressure incompressible screening; user must verify applicability",
+    "No automatic capture, explosion protection, acoustic, structural or code compliance validation",
+    "No manufacturer authenticity check; evidence labels are user declarations"
+  ],
+  "fan": {
+    "source": "SYNTHETIC TRAINING CURVE; not a manufacturer product or performance guarantee",
+    "evidence": "illustrative",
+    "corrected_points": [
+      {
+        "flow_m3s": 1.0,
+        "pressure_Pa": 2400.0,
+        "shaft_power_kW": 5.0
+      },
+      {
+        "flow_m3s": 2.0,
+        "pressure_Pa": 2200.0,
+        "shaft_power_kW": 7.0
+      },
+      {
+        "flow_m3s": 3.0,
+        "pressure_Pa": 1900.0,
+        "shaft_power_kW": 8.5
+      },
+      {
+        "flow_m3s": 4.0,
+        "pressure_Pa": 1350.0,
+        "shaft_power_kW": 9.5
+      },
+      {
+        "flow_m3s": 5.0,
+        "pressure_Pa": 650.0,
+        "shaft_power_kW": 10.0
+      }
+    ],
+    "intersections": [
+      {
+        "flow_m3s": 3.479739730509442,
+        "flow_m3h": 12527.063029833991,
+        "pressure_Pa": 1636.143148219807,
+        "shaft_power_kW": 8.979739730509442,
+        "compatible_efficiency": 0.6340219748594277,
+        "fan_minus_system_slope": -1490.382485433916,
+        "local_slope_screen": "restoring",
+        "note": "Slope screening does not prove dynamic stability; vendor validation required"
+      }
+    ],
+    "maximum_sampled_shaft_power_kW": 10.0,
+    "motor_screen_mechanical_kW": 11.340206185567013,
+    "margin_fraction": 0.1,
+    "envelope_note": "Bounded sampled curve only; manufacturer must confirm full allowed envelope and maxima"
+  },
+  "input_sha256": "86efddb564565f07e3ef0726bf0b0f0d3d5cbe8589d068e704c24d492fe9be91"
+}

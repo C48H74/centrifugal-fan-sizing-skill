@@ -1,0 +1,32 @@
+Local execution on 2026-10-13
+Python 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+
+test_invalid_efficiency (test_basic_calculator.BasicCalculatorTests.test_invalid_efficiency) ... ok
+test_mismatched_bases (test_basic_calculator.BasicCalculatorTests.test_mismatched_bases) ... ok
+test_portuguese_compatibility (test_basic_calculator.BasicCalculatorTests.test_portuguese_compatibility) ... ok
+test_publication_example (test_basic_calculator.BasicCalculatorTests.test_publication_example) ... ok
+test_analytical_intersection (test_engineering.EngineeringTests.test_analytical_intersection) ... ok
+test_basis_mismatch (test_engineering.EngineeringTests.test_basis_mismatch) ... ok
+test_colebrook_residual (test_engineering.EngineeringTests.test_colebrook_residual) ... ok
+test_curve_efficiency_rejected (test_engineering.EngineeringTests.test_curve_efficiency_rejected) ... ok
+test_density_similarity (test_engineering.EngineeringTests.test_density_similarity) ... ok
+test_duplicate_identifiers_rejected (test_engineering.EngineeringTests.test_duplicate_identifiers_rejected) ... ok
+test_interior_efficiency_rejected (test_engineering.EngineeringTests.test_interior_efficiency_rejected) ... ok
+test_laminar (test_engineering.EngineeringTests.test_laminar) ... ok
+test_motor_uses_envelope_and_mechanical_output (test_engineering.EngineeringTests.test_motor_uses_envelope_and_mechanical_output) ... ok
+test_multiple_roots_inside_one_interval (test_engineering.EngineeringTests.test_multiple_roots_inside_one_interval) ... ok
+test_no_extrapolation (test_engineering.EngineeringTests.test_no_extrapolation) ... ok
+test_nonfinite_rejected (test_engineering.EngineeringTests.test_nonfinite_rejected) ... ok
+test_root_pressure_balance (test_engineering.EngineeringTests.test_root_pressure_balance) ... ok
+test_segment_hand_calculation (test_engineering.EngineeringTests.test_segment_hand_calculation) ... ok
+test_speed_similarity (test_engineering.EngineeringTests.test_speed_similarity) ... ok
+test_tangent_root_once (test_engineering.EngineeringTests.test_tangent_root_once) ... ok
+test_transition_rejected (test_engineering.EngineeringTests.test_transition_rejected) ... ok
+test_unknown_unit_field_rejected (test_engineering.EngineeringTests.test_unknown_unit_field_rejected) ... ok
+test_local_markdown_targets (test_package.PackageTests.test_local_markdown_targets) ... ok
+test_translation_coverage (test_package.PackageTests.test_translation_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.508s
+
+OK

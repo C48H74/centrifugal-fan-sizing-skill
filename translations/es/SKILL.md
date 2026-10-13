@@ -40,3 +40,14 @@ Geometría: u₂ = πD₂n/60 solo relaciona velocidad periférica, diámetro y 
 Entregar entradas/unidades/orígenes, hipótesis, ecuaciones/resultados, pérdidas por tramo cuando existan, punto de funcionamiento, potencias de eje/motor/eléctrica separadas, pendientes y aceptación. Tratar gases inflamables/polvo combustible con referencias vigentes específicas; no inventar conformidad.
 
 Leer [ejemplo y fuentes](example-and-sources.md) para caso 12.000 m³/h y problemas de imagen. Verificar fuentes oficiales y ediciones aplicables para selección actual y requisitos normativos. Usar curvas/manuales del fabricante como evidencia del equipo.
+
+
+## Flujo profesional — revisión 2.0
+
+Base internacional y anexos UE/Brasil. Apoya ingeniería empresarial; no certifica productos ni autoriza construcción automáticamente.
+
+Para cada estudio leer [manual](engineering-manual.md), [registro normativo](standards-register.md) y [anexo de jurisdicción](jurisdiction-annex.md). Cláusulas/límites requieren textos licenciados adoptados. Para cálculos reproducibles leer [software y caso](software-and-case.md) y [contrato de entrada EN/PT/ES](../../references/input-contract.md). Usar `scripts/engineering.py` solo en su modelo de recorrido único; curvas sintéticas se identifican ilustrativas. Para consulta/compra/puesta en servicio usar [expediente](project-dossier.md), con hoja de datos, matriz, ofertas, inspección/ensayos y checklist. Mantener equivalencia técnica/evidencia/límites entre idiomas.
+
+Separar conceptual, preliminar, consulta, compra y as-built. Continuar cálculos con hipótesis explícitas, pero no autorizar compra/construcción con requisitos obligatorios o límites del proveedor pendientes. Autor/revisor/aprobador deben ser responsables reales; no inventar firmas, credenciales, curvas certificadas o cláusulas cumplidas. Caso distingue simulación de entrega real documentada.
+
+Evidencia normativa: catálogo verificado, método público revisado, adoptada en proyecto, cláusula licenciada verificada. Registrar identificación/edición/enmiendas, gatillo, cláusula comprobada, evidencia, responsable y cierre. Bibliografía, mención de método, motor CE o rendimiento supuesto no demuestran conformidad del conjunto.

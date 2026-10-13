@@ -1,6 +1,6 @@
 ---
 name: dimensionar-exaustor-centrifugo
-description: Perform preliminary centrifugal exhaust fan sizing and curve-based selection using airflow, duct losses, pressure, density and power. Use for calculation reports and selection reviews; impeller manufacture requires dedicated aerodynamic and mechanical design.
+description: Prepare traceable centrifugal fan engineering studies, duct losses, curve-based selection, standards applicability and procurement/commissioning dossiers. Use for industrial design reviews and technical cases; certification and impeller manufacture require project-specific specialist evidence.
 ---
 
 # Centrifugal exhaust fan sizing
@@ -8,6 +8,20 @@ description: Perform preliminary centrifugal exhaust fan sizing and curve-based 
 English is the primary skill language. Respond in the requested language; default to English when unspecified. Full translations: [Português](translations/pt/SKILL.md), [Español](translations/es/SKILL.md). These are translations of this skill, not independent skills. Apply the same technical criteria in all languages.
 
 Provide traceable calculations separating supplied data, assumptions and manufacturer-verified selection. Estimated diameters or speeds do not establish a validated fan.
+
+## Professional workflow and required reading
+
+Revision 2.0 — international technical basis with separate EU/Brazil applicability. This skill supports company engineering workflows; it does not autonomously certify products or approve construction.
+
+- For every engineering study read the [engineering manual](references/engineering-manual.md), [standards register](references/standards-register.md) and the applicable section of the [jurisdiction annex](references/jurisdiction-annex.md). These explain physics, method, scope and evidence; use licensed adopted standards for clause-level decisions.
+- For software or a reproducible case read [software scope and worked case](references/software-and-case.md) and [input contract EN/PT/ES](references/input-contract.md). Use `scripts/engineering.py` only within its explicit single-path model; label supplied synthetic curves as illustrative.
+- For vendor inquiry, procurement or commissioning use the [project dossier](templates/project-dossier.md), including data sheet, applicability matrix, bid comparison, inspection/test plan and release checklist.
+- Full technical documents and dossier translations are linked from the [Portuguese](translations/pt/SKILL.md) and [Spanish](translations/es/SKILL.md) entrypoints. Keep numerical definitions, evidence status and limitations equivalent when translating.
+
+Separate stages: conceptual estimate; preliminary engineering; vendor inquiry; purchase release; as-built verification. Progress calculations with explicit assumptions, but do not release procurement/construction with unresolved mandatory requirements or missing vendor limits. Assign preparer/checker/approver fields to real responsible people; never fabricate signatures, credentials, certified curves or clause compliance. A portfolio case must identify whether it is simulated or a real documented delivery.
+
+Normative evidence levels: catalog verified, public method reviewed, project adopted, licensed clause verified. Record identifier/edition/amendments, applicability trigger, clause when actually reviewed, evidence, responsible owner and closure. Never treat a standards bibliography, test-method statement, CE motor or an assumed efficiency as proof of assembly conformity.
+
 
 ## Inputs and calculation basis
 

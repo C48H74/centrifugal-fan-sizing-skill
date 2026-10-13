@@ -1,5 +1,38 @@
 # Centrifugal Exhaust Fan Sizing Skill
 
+**Revision 2.0 — professional engineering workflow · English / Português / Español**
+
+A traceable preliminary engineering toolkit with detailed physics, standards applicability, procurement and commissioning controls. International technical basis with dedicated European Union and Brazil annexes. Numerical verification is provided; product certification, licensed clause compliance and project approval are not claimed.
+
+## Technical documentation
+
+| Document | English | Português | Español |
+| --- | --- | --- | --- |
+| Skill instructions | [EN](SKILL.md) | [PT](translations/pt/SKILL.md) | [ES](translations/es/SKILL.md) |
+| Engineering manual | [EN](references/engineering-manual.md) | [PT](translations/pt/engineering-manual.md) | [ES](translations/es/engineering-manual.md) |
+| Standards register | [EN](references/standards-register.md) | [PT](translations/pt/standards-register.md) | [ES](translations/es/standards-register.md) |
+| EU / Brazil applicability | [EN](references/jurisdiction-annex.md) | [PT](translations/pt/jurisdiction-annex.md) | [ES](translations/es/jurisdiction-annex.md) |
+| Procurement / FAT / SAT dossier | [EN](templates/project-dossier.md) | [PT](translations/pt/project-dossier.md) | [ES](translations/es/project-dossier.md) |
+| Software and worked industrial case | [EN](references/software-and-case.md) | [PT](translations/pt/software-and-case.md) | [ES](translations/es/software-and-case.md) |
+
+[Input contract EN/PT/ES](references/input-contract.md) · [Numerical case input](examples/industrial-case.json) · [Results](examples/industrial-case-results.json) · [Sensitivity CSV](examples/sensitivity.csv) · [Validation record](references/validation.md)
+
+[Case review and open release items](examples/case-review.md) · [Executed local test log — 24 passed](examples/test-results.txt)
+
+## Reproducible industrial case
+
+The deliberately synthetic case computes segment losses with Colebrook/Darcy, a total-pressure system curve, curve intersections, shaft power and a bounded motor-envelope screen. It compares dirty/clean filters, density and speed. It is not a client delivery or a manufacturer's certified fan.
+
+![Deterministic fan/system and power plots](assets/engineering/case-curves.png)
+
+```bash
+python scripts/engineering.py examples/industrial-case.json --output examples/industrial-case-results.json
+python -m unittest discover -s tests -v
+```
+
+Calculation tools use the Python 3 standard library. Optional `matplotlib` reproduces the PNG/PDF plots with `python scripts/build_case.py`. The three publication illustrations below remain in English.
+
+
 A practical Codex skill for preliminary centrifugal exhaust fan sizing and manufacturer-curve selection. English is the primary language, with complete Portuguese and Spanish translations.
 
 **Languages:** [English](SKILL.md) · [Português](translations/pt/SKILL.md) · [Español](translations/es/SKILL.md)

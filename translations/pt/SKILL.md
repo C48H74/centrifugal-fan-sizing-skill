@@ -1,8 +1,3 @@
----
-name: dimensionar-exaustor-centrifugo
-description: Dimensionar preliminarmente e selecionar exaustores centrífugos usando vazão, perdas dos dutos, pressão, densidade, curvas e potência. Use para memoriais de cálculo e auditoria de seleções; fabricação do rotor exige projeto aerodinâmico e mecânico específico.
----
-
 # Dimensionar exaustor centrífugo
 
 O inglês é o idioma principal. Responder no idioma solicitado pelo usuário; usar inglês quando não especificado. Esta é a tradução da [skill principal](../../SKILL.md), não uma skill independente.
@@ -47,3 +42,14 @@ Entregar tabela de entradas/unidades/origens, hipóteses, equações e resultado
 Ler [exemplo e fontes](example-and-sources.md) para o exemplo de 12.000 m³/h e erros da imagem fornecida. Verificar fontes oficiais e edição aplicável para requisitos normativos ou seleção atual; usar curva e manual do fabricante como evidência do equipamento.
 
 A interface principal da calculadora usa argumentos e campos JSON em inglês; os aliases portugueses continuam disponíveis. Ver [instruções EN/PT/ES](../../references/calculator.md).
+
+
+## Fluxo profissional — revisão 2.0
+
+Base internacional com anexos separados UE/Brasil. Apoia engenharia empresarial; não certifica produto nem aprova construção automaticamente.
+
+Para todo estudo, ler [manual de engenharia](engineering-manual.md), [registro normativo](standards-register.md) e [anexo de jurisdição](jurisdiction-annex.md). Para cláusulas e limites, usar textos licenciados adotados. Para cálculos reproduzíveis, ler [software e case](software-and-case.md) e [contrato de entrada EN/PT/ES](../../references/input-contract.md). Usar `scripts/engineering.py` apenas no modelo explícito de caminho único; identificar curvas sintéticas como ilustrativas. Para consulta/compra/comissionamento, usar [dossiê](project-dossier.md), com folha de dados, matriz, propostas, inspeções/ensaios e checklist. Preservar equivalência técnica/evidências/limitações nas traduções.
+
+Separar conceitual, preliminar, consulta, compra e as-built. Continuar cálculos com hipóteses explícitas, mas não liberar compra/construção com requisitos obrigatórios ou limites do fornecedor pendentes. Elaborador/verificador/aprovador devem ser pessoas responsáveis reais; não inventar assinatura, credencial, curva certificada ou conformidade de cláusula. Case distingue simulação de entrega real documentada.
+
+Evidência normativa: catálogo verificado, método público revisado, adotada no projeto, cláusula licenciada verificada. Registrar identificação/edição/emendas, gatilho, cláusula conferida, evidência, responsável e fechamento. Bibliografia, menção de método, motor CE ou eficiência suposta não comprovam conformidade do conjunto.
