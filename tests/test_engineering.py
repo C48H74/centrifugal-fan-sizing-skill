@@ -1,6 +1,7 @@
 """Numerical invariants and failure modes; run python -m unittest discover -s tests -v."""
 import copy
 import importlib.util
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -114,5 +115,14 @@ class EngineeringTests(unittest.TestCase):
         q=root['flow_m3s']
         self.assertAlmostEqual(root['pressure_Pa'],r['system_curve']['constant_Pa']+r['system_curve']['quadratic_Pa_per_m3s_squared']*q*q)
         self.assertEqual(root['local_slope_screen'],'restoring')
+
+    def test_shipped_case_reproduces(self):
+        saved=json.loads((ROOT/'examples/industrial-case-results.json').read_text(encoding='utf-8'))
+        actual=eng.analyze(self.case)
+        for field in ['pressure_Pa','air_power_kW','shaft_power_kW','electrical_at_duty_kW']:
+            self.assertAlmostEqual(saved['design'][field],actual['design'][field],places=9)
+        self.assertAlmostEqual(saved['fan']['intersections'][0]['flow_m3s'],actual['fan']['intersections'][0]['flow_m3s'],places=9)
+        raw=(ROOT/'examples/industrial-case.json').read_bytes()
+        self.assertEqual(saved['input_sha256'],hashlib.sha256(raw).hexdigest())
 
 if __name__=='__main__':unittest.main()

@@ -17,7 +17,7 @@ A traceable preliminary engineering toolkit with detailed physics, standards app
 
 [Input contract EN/PT/ES](references/input-contract.md) · [Numerical case input](examples/industrial-case.json) · [Results](examples/industrial-case-results.json) · [Sensitivity CSV](examples/sensitivity.csv) · [Validation record](references/validation.md)
 
-[Case review and open release items](examples/case-review.md) · [Executed local test log — 24 passed](examples/test-results.txt)
+[Case review and open release items](examples/case-review.md) · [Executed local test log — 25 passed](examples/test-results.txt)
 
 ## Reproducible industrial case
 

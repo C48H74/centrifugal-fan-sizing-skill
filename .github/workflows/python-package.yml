@@ -60,3 +60,7 @@ jobs:
               assert rejected.returncode == 2, (flag, value, rejected.returncode)
           print("Documented example and 5 invalid-input checks passed.")
           PY
+      - name: Run engineering and documentation regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce the industrial case
+        run: python scripts/engineering.py examples/industrial-case.json --output /tmp/industrial-case-results.json

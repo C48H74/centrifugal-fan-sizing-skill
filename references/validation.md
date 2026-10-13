@@ -2,7 +2,7 @@
 
 Date: 2026-10-13. This record separates numerical software verification from engineering validation and statutory conformity.
 
-Executed locally: **24 automated tests passed**, root skill structural validation passed, and the synthetic case/results/sensitivity plots were reproduced. This result describes this revision's local verification; it is not a third-party certification or a claim that unexecuted future revisions pass.
+Executed locally: **25 automated tests passed**, root skill structural validation passed, and the synthetic case/results/sensitivity plots were reproduced. This result describes this revision's local verification; it is not a third-party certification or a claim that unexecuted future revisions pass. The repository CI also runs the regression suite and reproduces the case on its configured Python matrix; check the actual workflow result before claiming a remote pass.
 
 ## Verification scope
 
