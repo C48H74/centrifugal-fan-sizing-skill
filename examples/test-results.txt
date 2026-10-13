@@ -19,7 +19,7 @@ test_no_extrapolation (test_engineering.EngineeringTests.test_no_extrapolation) 
 test_nonfinite_rejected (test_engineering.EngineeringTests.test_nonfinite_rejected) ... ok
 test_root_pressure_balance (test_engineering.EngineeringTests.test_root_pressure_balance) ... ok
 test_segment_hand_calculation (test_engineering.EngineeringTests.test_segment_hand_calculation) ... ok
-test_shipped_case_reproduces (test_engineering.EngineeringTests.test_shipped_case_reproduces) ... FAIL
+test_shipped_case_reproduces (test_engineering.EngineeringTests.test_shipped_case_reproduces) ... ok
 test_speed_similarity (test_engineering.EngineeringTests.test_speed_similarity) ... ok
 test_tangent_root_once (test_engineering.EngineeringTests.test_tangent_root_once) ... ok
 test_transition_rejected (test_engineering.EngineeringTests.test_transition_rejected) ... ok
@@ -27,18 +27,7 @@ test_unknown_unit_field_rejected (test_engineering.EngineeringTests.test_unknown
 test_local_markdown_targets (test_package.PackageTests.test_local_markdown_targets) ... ok
 test_translation_coverage (test_package.PackageTests.test_translation_coverage) ... ok
 
-======================================================================
-FAIL: test_shipped_case_reproduces (test_engineering.EngineeringTests.test_shipped_case_reproduces)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "D:\Exaustor_Centrifugo\github\tests\test_engineering.py", line 126, in test_shipped_case_reproduces
-    self.assertEqual(saved['input_sha256'],hashlib.sha256(raw).hexdigest())
-AssertionError: '86efddb564565f07e3ef0726bf0b0f0d3d5cbe8589d068e704c24d492fe9be91' != '123049a73b857acde32c572cb892e5439e7750aaabe182a24c1667166d2c1670'
-- 86efddb564565f07e3ef0726bf0b0f0d3d5cbe8589d068e704c24d492fe9be91
-+ 123049a73b857acde32c572cb892e5439e7750aaabe182a24c1667166d2c1670
+Ran 25 tests in 0.970s
 
-
-----------------------------------------------------------------------
-Ran 25 tests in 0.924s
-
-FAILED (failures=1)
+OK
